@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity(), MainActivityCallbackFactory.CallbackHo
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        managers.umamiTracker.trackEvent("app_open")
+        // Analytics ping removed in this fork (no data is sent to the original author's server).
         setupUi()
         setupBackPressHandling()
 
